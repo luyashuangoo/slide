@@ -9,7 +9,7 @@
 }
 .images{
     position: relative;
-    transition: all 3s;
+    transition: all .3s;
     display: flex;
 }
 .images > img{
@@ -18,11 +18,13 @@
 }
 .images > img.current{
     left: 0;
-    transform: translateX(0)
+    transform: translateX(0);
+    z-index:1;
 }
 .images > img.enter{
-    transform: translateX(100)
+    transform: translateX(100%);
 }
 .images > img.leave{
-    transform: translateX(-100)
+    transform: translateX(-100%);
+    z-index:1;
 }
