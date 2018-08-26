@@ -10,6 +10,7 @@
 .images{
     position: relative;
     transition: all 3s;
+    display: flex;
 }
 .images > img{
     width: 100%;

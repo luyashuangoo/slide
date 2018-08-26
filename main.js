@@ -44,12 +44,9 @@ $(document).ready(function(){
 
 setInterval(function(){
 $(`.images>img:nth-child(${x(n)})`).removeClass('current').addClass('leave')
-console.log('2')
   .one('transitionend',function(e){
-    console.log('1')
       $(e.currenTtarget).removeClass('leave').addClass('enter')
   })
-  console.log('1')
   $(`.images>img:nth-child(${x(n+1)})`).removeClass('enter').addClass('current')
   n += 1
 },3000)
