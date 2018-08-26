@@ -1,0 +1,27 @@
+*{margin: 0px;padding: 0px;}
+*{box-sizing:border-box;}
+
+.windows{
+    width: 1200px;
+    height: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.images{
+    position: relative;
+    transition: all 3s;
+}
+.images > img{
+    width: 100%;
+    top: 0;
+}
+.images > img.current{
+    left: 0;
+    transform: translateX(0)
+}
+.images > img.enter{
+    transform: translateX(100)
+}
+.images > img.leave{
+    transform: translateX(-100)
+}
